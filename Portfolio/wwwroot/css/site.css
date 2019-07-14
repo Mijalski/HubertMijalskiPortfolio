@@ -4348,6 +4348,9 @@ html {
   font-size: 1rem;
   height: 100vh;
 }
+body {
+  font-size: 18px;
+}
 h1 {
   font-size: 34px;
   margin-bottom: 20px;
@@ -4356,7 +4359,12 @@ h2 {
   font-size: 26px;
   margin-bottom: 15px;
 }
-.loading-in {
+h3 {
+  font-size: 24x;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+.center-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4365,4 +4373,12 @@ h2 {
 }
 .content {
   margin-top: 100px;
+}
+.fa-github {
+  font-size: 0.7em;
+  color: #444;
+}
+.fa-github:hover {
+  color: #007bff;
+  cursor: pointer;
 }

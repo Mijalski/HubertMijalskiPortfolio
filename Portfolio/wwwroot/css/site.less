@@ -1,11 +1,12 @@
 ﻿/****************** VARIABLES ****************/
 @standard-font-size: 18px;
-@medium-font-size: 26px;
-@large-font-size: 34px;
+@medium-font-size: 24x;
+@large-font-size: 26px;
+@xlarge-font-size: 34px;
 
 /************** COLORS *************/
 @color-white: #fff;
-@color-grey: #ccc;
+@color-grey: #444;
 @color-link: #007bff;
 @color-off-white: #f9f1f1;
 @color-yellow: #FFD400;
@@ -29,17 +30,27 @@ html {
     height: 100vh;
 }
 
+body{
+    font-size: @standard-font-size;
+}
+
 h1 {
-    font-size: @large-font-size;
+    font-size: @xlarge-font-size;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: @medium-font-size;
+    font-size: @large-font-size;
     margin-bottom: 15px;
 }
 
-.loading-in {
+h3 {
+    font-size: @medium-font-size;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.center-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,4 +60,14 @@ h2 {
 
 .content {
     margin-top: 100px;
+}
+
+.fa-github {
+    font-size: 0.7em;
+    color: @color-grey;
+
+    &:hover {
+        color: @color-link;
+        cursor: pointer;
+    }
 }
