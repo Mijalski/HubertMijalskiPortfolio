@@ -1,29 +1,43 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">Portfolio</a>
-    <button class="navbar-toggler" @onclick="@ToggleNavMenu">
+﻿
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+    <NavLink class="navbar-brand" href="" Match="NavLinkMatch.All">
+        <strong>Hubert Mijalski</strong>
+    </NavLink>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-</div>
-
-<div class="@NavMenuCssClass" @onclick="@ToggleNavMenu">
-    <ul class="nav flex-column">
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </li>
-    </ul>
-</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <NavLink class="nav-link waves-effect waves-light" href="counter">
+                    <i class="fas fa-scroll mr-1"></i> CV
+                </NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink class="nav-link waves-effect waves-light" href="fetchdata">
+                    <i class="fas fa-server mr-1"></i> .NET Experience
+                </NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink class="nav-link waves-effect waves-light" href="#">
+                    <i class="fas fa-gamepad mr-1"></i> My Games
+                </NavLink>
+            </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+                <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 @code {
     bool collapseNavMenu = true;
