@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Hubert Mijalski - Portfolio</title>
+    <base href="/" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <environment include="Development">
+        <link href="css/site.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <app>
+        <span class="loading-in">Hello, my potential new employer. Please wait while the content is loading in.</span>
+    </app>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+</body>
+</html>
