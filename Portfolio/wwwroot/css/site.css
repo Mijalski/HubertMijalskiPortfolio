@@ -4364,6 +4364,9 @@ h3 {
   margin-top: 35px;
   margin-bottom: 10px;
 }
+p {
+  text-align: justify;
+}
 .center-text {
   position: absolute;
   top: 50%;
@@ -4374,11 +4377,20 @@ h3 {
 .content {
   margin-top: 100px;
 }
-.fa-github {
-  font-size: 0.7em;
+h3 > a {
   color: #444;
 }
-.fa-github:hover {
+h3 > a:hover {
   color: #007bff;
   cursor: pointer;
+}
+h3 > a .fa,
+h3 > a .fas,
+h3 > a .fab {
+  font-size: 0.7em;
+}
+.portfolio-entry-img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
 }

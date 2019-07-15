@@ -50,6 +50,10 @@ h3 {
     margin-bottom: 10px;
 }
 
+p {
+    text-align: justify;
+}
+
 .center-text {
     position: absolute;
     top: 50%;
@@ -62,12 +66,20 @@ h3 {
     margin-top: 100px;
 }
 
-.fa-github {
-    font-size: 0.7em;
+h3 > a {
     color: @color-grey;
 
     &:hover {
         color: @color-link;
         cursor: pointer;
     }
+
+    .fa, .fas, .fab {
+        font-size: .7em;
+    }
+}
+.portfolio-entry-img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
 }
